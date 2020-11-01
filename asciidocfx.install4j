@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<install4j version="8.0" transformSequenceNumber="8">
-  <directoryPresets config="/Users/usta/projects/AsciidocFX/jmods" />
-  <application name="AsciidocFX" applicationId="7853-9376-5862-1224" mediaDir="target" compression="4" lzmaCompression="true" pack200Compression="true" excludeSignedFromPacking="false" shortName="AsciidocFX" publisher="AsciidocFX" publisherWeb="http://asciidocfx.com" version="1.7.3" macVolumeId="b98c377570068f5e" javaMinVersion="12" javaMaxVersion="12" allowBetaVM="true">
+<install4j version="8.0.8" transformSequenceNumber="8">
+  <directoryPresets config="/jmods" />
+  <application name="AsciidocFX" applicationId="7853-9376-5862-1224" mediaDir="target" compression="4" lzmaCompression="true" pack200Compression="true" excludeSignedFromPacking="false" shortName="AsciidocFX" publisher="AsciidocFX" publisherWeb="http://asciidocfx.com" version="1.7.3" macVolumeId="b98c377570068f5e" javaMinVersion="12" javaMaxVersion="15" allowBetaVM="true">
     <searchSequence>
       <envVar name="JAVA_HOME" />
       <envVar name="JDK_HOME" />
       <registry />
     </searchSequence>
-    <codeSigning macEnabled="true" macPkcs12File="/home/travis/build/asciidocfx/AsciidocFX/code_sign.p12" />
-    <jreBundles jdkProviderId="AdoptOpenJDK" release="openjdk12/jdk-12.0.1+12" />
+    <codeSigning macPkcs12File="/code_sign.p12.enc" />
+    <jreBundles jdkProviderId="JBR" release="openjdk12/jdk-12.0.1+12" />
   </application>
   <files globalExcludeSuffixes="bin" defaultOverwriteMode="1" launcherOverwriteMode="1" defaultFileMode="755">
     <mountPoints>

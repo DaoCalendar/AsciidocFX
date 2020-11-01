@@ -199,6 +199,7 @@ public class EditorPane extends AnchorPane {
 
     private void updateOptions() {
         webEngine().executeScript("updateOptions()");
+        //updateOptions() ?
     }
 
     private void setInitialized() {
